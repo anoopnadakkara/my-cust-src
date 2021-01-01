@@ -2,11 +2,14 @@ version: '3.4'
 
 services:
   
-  moduledb:
+  module.db:
     image: mongo
   
+  module.db.admin:
+    image: mongo-express
+
   module.api:
     image: ${DOCKER_REGISTRY-}moduleapi
     build:
       context: .
-        dockerfile: my-crm/src/services/module-service/Dockerfile
+      dockerfile: my-crm/src/services/module-service/Dockerfile
