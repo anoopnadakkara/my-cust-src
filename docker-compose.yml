@@ -9,4 +9,4 @@ services:
     image: ${DOCKER_REGISTRY-}moduleapi
     build:
       context: .
-      dockerfile: my-crm/src/services/module-service/Dockerfile
+        dockerfile: my-crm/src/services/module-service/Dockerfile
